@@ -1,25 +1,13 @@
 $(document).ready(function () {
-  $("button#green").click(function () {
-    $("body").addClass("green-background");
+  $("#green").click(function () {
+    $("ul").append("<li>Hello!</li>");
   });
 
-  $("button#yellow").click(function () {
-    $("body").addClass("yellow-background");
+  $("#yellow").click(function () {
+    $("ul").append("<li>Goodbye!</li>");
   });
 
-  $("button#red").click(function () {
-    $("body").addClass("red-background");
+  $("#red").click(function () {
+    $("ul").prepend("<li>Stop copying me!</li>");
   });
 });
-
-var number = 1;
-var number2 = 2;
-
-function add(number1, number2) {
-  var result = number1 + number2;
-  return result;
-}
-
-var total = add(100, 100);
-
-alert(total);
